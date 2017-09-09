@@ -1,0 +1,78 @@
+/*清原有的默认样式*/
+body,figure,figcaption,h2,h3,p{
+    margin: 0;
+    padding: 0;
+}
+
+/*设置图片样式*/
+.test1-img{
+    width: 50%;
+    height:10%;
+    overflow: hidden;
+    margin-left:250px;
+}
+
+figure{
+    position: relative;
+    overflow: hidden;/*使用overflow属性设置成hidden，图片超出容器的部分就会自动隐藏*/
+    width: 100%;
+    float: left;
+}
+
+figcaption{
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.test1{
+    background-color: #2F0000;
+}
+
+.test1 figcaption {
+    margin: 20px;
+}
+
+
+/*对test1的figcaption下面的p标签进行样式设计*/
+.test1 .light{
+   margin-top: 20px;
+}
+
+
+/*给figure下面的所有的p标签加上动画延时效果*/
+/* figure figcaption p{
+    
+} */
+
+/*将test1里面的文字内容移出页面*/
+.test1 .light{
+    transform: translate(-400px,0px);
+    transition: transform 0.35s;
+}
+
+
+/*当鼠标滑过外部容器figure的时候改变p标签和h2标签的位置*/
+.test1:hover .light{
+    transform: translate(0px,0px);
+}
+
+/*为了实现逐个出现的效果，就要单独给每一个p标签加上延时,给第一个p标签加延时，每个P标签的延时长短不同就决定了他们是先后进入页面的*/
+.test1 figcaption div:nth-of-type(1){
+    transition-delay: 0.05s;/*当鼠标放在图片上0.05秒以后开始向右移动进入页面*/
+}
+
+/*为了实现逐个出现的效果，就要单独给每一个p标签加上延时,给第二个p标签加延时*/
+.test1 figcaption div:nth-of-type(2){
+    transition-delay: 0.10s;/*当鼠标放在图片上0.10秒以后开始向右移动进入页面*/
+}
+
+/*为了实现逐个出现的效果，就要单独给每一个p标签加上延时,给第三个p标签加延时*/
+.test1 figcaption div:nth-of-type(3){
+    transition-delay: 0.15s;/*当鼠标放在图片上0.15秒以后开始向右移动进入页面*/
+}
+
+/*为了实现逐个出现的效果，就要单独给每一个p标签加上延时,给第四个p标签加延时*/
+.test1 figcaption div:nth-of-type(4){
+    transition-delay: 0.2s;/*当鼠标放在图片上0.2秒以后开始向右移动进入页面*/
+}

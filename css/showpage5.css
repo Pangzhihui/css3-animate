@@ -1,0 +1,272 @@
+* {
+	font-family: "微软雅黑";
+}
+#container{
+	height: 100%;
+    background: url("../img4/background.png") no-repeat;
+    background-position: center center;
+    
+    /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+    background-attachment: fixed;
+    
+    /* 让背景图基于容器大小伸缩 */
+    background-size: cover;
+    
+	padding: 1%;
+}
+.row1 {
+	height: 15%;
+	box-sizing: border-box;
+    margin: 10px -5px 0px -5px !important;
+    position: relative;
+
+}
+.row2 {
+	height: 75%;
+	box-sizing: border-box;
+	margin: 10px -5px 0px -5px !important;
+
+}
+.left,.right,.middle{
+    height: 100%;
+    width: 100%;
+    padding: 0;
+}
+.pic-left {
+	height:15%;
+    background: url("../img4/leftone.png") no-repeat;
+    background-size: 100% 100%;
+}
+.pic-left3 {
+	height:15%;
+    background: url("../img4/lefttwo.png") no-repeat;
+    background-size: 100% 100%;
+}
+.leftimg1{
+	margin-top: 20%;
+}
+.box-left{
+    width: 30%;
+    height: 40%;
+    display: inline-block;
+    box-sizing: border-box;
+	position:relative;
+    float: right;
+    /*margin-left: 5%;*/
+}
+.box-right{
+    width: 30%;
+    height: 40%;
+    display: inline-block;
+    box-sizing: border-box;
+	position:relative;
+    float: right;
+    /*margin-left: 5%;*/
+}
+.title{
+	width:100%;
+    height:100%;
+    background-color: transparent;
+    padding:5px 0px;
+    
+}
+.num{
+	height:100%;
+    width:100%;
+    margin-top:2%;
+    border-radius: 3px;
+    padding:1px;
+    
+}
+#title1,#title2,#title3,#title4,#title5,#title6{
+    background-color: transparent;
+    border: none;
+    border-bottom:1px solid white;
+    height:100%;
+    width:70%;
+    font-size:14px;
+    font-weight: bold;
+    color:white;
+}
+#num1,#num2,#num3,#num4,#num5,#num6 {
+    background-color: transparent;
+    border: none;
+    border-bottom:1px solid white;
+    height:100%;
+    width:70%;
+    font-size:18px;
+    font-weight: bold;
+    color:#C4933C;
+}
+.firtitle{
+	height: 6%;
+    width:100%;
+    background-color: transparent;
+    position:relative;
+    padding-left:2%;
+    display: flex;
+    align-items: center;
+    color: #C4933C;
+    font-size: 18px;
+}
+.firtitle2{
+	height: 6%;
+    width:100%;
+    background-color: transparent;
+    position:relative;
+    padding-left:2%;
+    display: flex;
+    align-items: center;
+    color: #C4933C;
+    font-size:18px;
+    
+}
+.firtitle1{
+	height: 10%;
+    width:100%;
+    background-color: transparent;
+    position:relative;
+    padding-left:2%;
+    display: flex;
+    align-items: center;
+    color: #C4933C;
+    font-size:18px;
+    margin-top: 10px; 
+}
+.firtitle3{
+	height: 10%;
+    width:100%;
+    background-color: transparent;
+    position:relative;
+    padding-left:2%;
+    display: flex;
+    align-items: center;
+    color: #C4933C;
+    font-size:18px;
+    margin-top: 10px;
+    
+}
+.report-edit{
+    width:100%;
+    height:100%;
+}
+.report-edit .edit-chart{
+    width: 100%;
+    height:100%;
+}
+.report-edit .edit-chart .chart-con {
+    width: 100%;
+    height:100%;
+}
+.report-edit .edit-chart .chart-con .chart-con-view {
+    width: 100%;
+    height:100%;
+}
+.report-edit .edit-chart .chart-con .chart-con-add{
+    font-size: 80px;
+    color: #B1B2C4;
+    height: 80px;
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.pic-left1{
+	height:38%;
+    position: relative;
+    border-style: solid;
+    border-width: 16px 17px 17px;
+    border-image-source: url("../img4/lefttwo.png");
+    border-image-slice: 19 20 30 30 fill;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: repeat;
+    background: none;
+    margin-top: -5%;
+}
+.pic-left4{
+	height:38%;
+    position: relative;
+    border-style: solid;
+    border-width: 16px 17px 17px;
+    border-image-source: url("../img4/righttwo.png");
+    border-image-slice: 19 20 30 30 fill;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: repeat;
+    background: none;
+    margin-top: -5%;
+}
+.useless{
+	height: 7%;
+}
+.pic-left2{
+	height:35%;
+    position: relative;
+    border-style: solid;
+    border-width: 16px 17px 17px;
+    border-image-source: url("../img4/leftthree.png");
+    border-image-slice: 37 18 17 fill;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: repeat;
+    background: none;
+    margin-top: -5%;
+}
+.pic-left5{
+	height:35%;
+    position: relative;
+    border-style: solid;
+    border-width: 16px 17px 17px;
+    border-image-source: url("../img4/rightthree.png");
+    border-image-slice: 37 8 12 26 fill;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: repeat;
+    background: none;
+    margin-top: -5%;
+}
+.centertitle{
+	color: white;
+	font-size: 45px;
+	text-align: center;
+    width: 80%;
+    height:100%;
+    margin: 0 auto;
+    background-image: url('../img4/title.png');
+    background-size: 100% 100%;
+    
+    
+}
+.block1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+.nnum1{
+	color: #F7E17F;
+	font-size: 34px;
+	background: #503654;
+	margin: 0 5px;
+	padding: 0 5px;
+}
+.pic1 {
+	height: 90%;
+	width: 100%;
+	position: relative;
+	border: 1px solid white;
+	margin-top: 5%;
+}
+.box2 {
+	position: absolute;
+	top:5px;
+	right:5px;
+}
+.button-publish{
+    background-color: #2B1F58;
+    color: #fff;
+    border: none;
+}
